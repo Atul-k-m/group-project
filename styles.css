@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 2px;
+    margin-top: 20px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .winner-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  
+  .play-again {
+    font-size: 18px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .play-again:hover {
+    background-color: #0056b3;
+  }
+  
